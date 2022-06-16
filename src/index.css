@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app-component {
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style:solid;
+    color: blue;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-width: 400px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tours-component {
+    border-color: darkgoldenrod;
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px 100px;
+    /* width: 400px; */
+    /* align-self: center; */
+}
+
+.tour-component {
+    border-color: aqua;
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px 75px;
+    /* width: 300px; */
+    /* align-self: center; */
+    
+}
+
+.tour-component img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
