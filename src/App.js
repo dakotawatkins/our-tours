@@ -30,12 +30,29 @@ function App() {
     fetchTours();
   }, []);
 
+  if (loading) {
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
+  }
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">
+          <h2>no tours left</h2>
+          <button className="btn" onClick={() => fetchTours()}>
+            refresh
+          </button>
+        </div>
+      </main>
+    );
+  }
   return (
-    <div className="app-component">
-      <h1>app comp</h1>
-      <Loading />
+    <main>
       <Tours tours={tours} removeTour={removeTour} />
-    </div>
+    </main>
   );
 }
 

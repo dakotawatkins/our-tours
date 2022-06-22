@@ -1,7 +1,7 @@
 function Loading() {
   return (
-    <div className="loading-component">
-      <h2>loading comp</h2>
+    <div className="loading">
+      <h2>Loading...</h2>
     </div>
   );
 }
